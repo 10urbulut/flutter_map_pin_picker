@@ -1,5 +1,3 @@
-// ignore_for_file: library_private_types_in_public_api
-
 library flutter_map_pin_picker;
 
 import 'package:flutter/material.dart';
@@ -15,18 +13,19 @@ class MapPicker extends StatefulWidget {
   final bool? showDot;
   final MapPickerController? mapPickerController;
 
-  MapPicker(
-      {Key? key,
-      required this.mapPickerController,
-      required this.iconWidget,
-      this.showDot = true,
-      required this.child});
+  const MapPicker({
+    Key? key,
+    required this.mapPickerController,
+    required this.iconWidget,
+    this.showDot = true,
+    required this.child,
+  }) : super(key: key);
 
   @override
-  _MapPickerState createState() => _MapPickerState();
+  MapPickerState createState() => MapPickerState();
 }
 
-class _MapPickerState extends State<MapPicker>
+class MapPickerState extends State<MapPicker>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
 
