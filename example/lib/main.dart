@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_final_fields
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -14,7 +12,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -28,11 +25,10 @@ class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
-  _MyHomePageState createState() => _MyHomePageState();
+  MyHomePageState createState() => MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePageState extends State<MyHomePage> {
   Completer<GoogleMapController> _controller = Completer();
   MapPickerController mapPickerController = MapPickerController();
 
@@ -105,7 +101,6 @@ class _MyHomePageState extends State<MyHomePage> {
             controller: textController,
             style: const TextStyle(fontSize: 12, color: Colors.white),
           ),
-          // icon: Icon(Icons.directions_boat),
         ),
       ),
     );

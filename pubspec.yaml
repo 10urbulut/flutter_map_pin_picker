@@ -1,16 +1,14 @@
 name: flutter_map_pin_picker
 description: Map pin package project.
-version: 0.0.2
+version: 1.0.0
 homepage: https://github.com/10urbulut/
 repository: https://github.com/10urbulut/flutter_map_pin_picker/
 documentation: https://github.com/10urbulut/flutter_map_pin_picker
 
 
 
-
-
 environment:
-  sdk: ">=2.16.1 <3.0.0"
+  sdk: ">=2.18.0 <3.0.0"
   flutter: ">=3.0.4"
 
 dependencies:
